@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Warhammer 40K</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">Warhammer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="chapter.html">Chapter</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2 px-3"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-warning bg-dark" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <main>
+      <div class="container-sm">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner col-10 m-auto">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="/images/spaceMarine.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="/images/king.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="/images/sword.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="/images/adeptusMecanicus.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="/images/bloodAngels.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+      <br /><br />
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed text-white bg-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ultra Marines
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <code
+              >"We are the Ultramarines, the sons of Guilliman. Whilst we draw
+              breath, we stand. Whilst we stand, we fight. Whilst we fight, we
+              prevail. Nothing shall stay our wrath."</code
+            >
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed text-white bg-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Space Wolves
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <code
+              >"The Sons of Fenris they are, hardened in the forge of their
+              harsh world, eager for battle and honour. They are the grey
+              warriors, ashen like the wolf, whose greatest joy is to hear the
+              clamour of steel amidst the din of war."</code
+            >
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed text-white bg-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Inquisitor
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <code
+              >"I come to set straight that which is twisted; to cleanse that
+              which is unclean; to judge he who is guilty; to punish he who has
+              sinned. These things I do in the name of the most holy God-Emperor
+              of Mankind, and I do them gladly."</code
+            >
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed text-white bg-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Adeptus Mecanicus
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <code
+              >"There is no truth in flesh only betrayal. There is no strength
+              in flesh, only weakness. There is no constancy in flesh, only
+              decay. There is no certainty in flesh but death."</code
+            >
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed text-white bg-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Blood Angels
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <code
+              >"They are the sons of the Angel, the blooded host, the defenders
+              of Humanity. They are strength. They are nobility. They are the
+              Blood Angels, and I say to you there are no more loyal or
+              determined servants of the Emperor alive today."</code
+            >
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
